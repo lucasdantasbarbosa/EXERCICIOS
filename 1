@@ -2,7 +2,7 @@ def soma(*valores):
     r = 0
     for i in valores:
         r += i 
-        return r
+    return r
     
 def exibeforma(a,b,c):
     print("1, valor = {} ".format(a))
@@ -15,9 +15,15 @@ def returnMult(x,y):
     mt = x * y
     dv = x / y
     return(ad, su, mt, dv)
+def fatorial(n):
+    if n <= 1:
+        return 1
+    else:
+        return n * fatorial(n-1)
+
 
 print(soma(3,9))
-print(soma(1,2,3,4))
+print(soma(2,3,4,5))
 
 L = [31,77,193]
 exibeforma(*L)
